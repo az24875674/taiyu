@@ -4,9 +4,13 @@
     "description": "Taiwanese voice synthesis API",
     "main": "api.js",
     "scripts": {
-        "start": "node api.js"
+      "start": "node api.js"
     },
     "dependencies": {
-        "express": "^4.19.2"
-    }
-}
+      "express": "^4.17.1",
+      "node-fetch": "^2.6.1",
+      "cors": "^2.8.5"
+    },
+    "type": "module"
+  }
+  

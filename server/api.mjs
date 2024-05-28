@@ -1,6 +1,7 @@
-const express = require('express');
-const fetch = require('node-fetch');  // 确保安装了 node-fetch
-const cors = require('cors');  // 导入 cors 中间件
+import express from 'express';
+import fetch from 'node-fetch';
+import cors from 'cors';
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 

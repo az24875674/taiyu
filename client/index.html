@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiwanese Voice Synthesis</title>
+  <script type="module" src="./api.js"></script>
+</head>
+<body>
+  <h1>Taiwanese Voice Synthesis</h1>
+  <input type="text" id="text" placeholder="Enter text">
+  <button onclick="playVoice()">Play Voice</button>
+
+  <script type="module">
+    import { playTaiwaneseVoice } from './api.js';
+
+    window.playVoice = () => {
+      const text = document.getElementById('text').value;
+      playTaiwaneseVoice(text, "台語腔口");
+    };
+  </script>
+</body>
+</html>

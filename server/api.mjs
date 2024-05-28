@@ -38,7 +38,7 @@ api.取得查詢函式 = (專案) =>
 app.use(cors());
 
 app.get('/合成語音', async (req, res) => {
-  const { text, accent } = req.query;
+  const { 查詢腔口: accent, 查詢語句: text } = req.query;
   const url = api.語音合成({ 腔口: accent, 分詞: text });
   try {
     const response = await fetch(url);

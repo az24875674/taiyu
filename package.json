@@ -1,0 +1,12 @@
+{
+    "name": "my-api",
+    "version": "1.0.0",
+    "description": "Taiwanese voice synthesis API",
+    "main": "api.js",
+    "scripts": {
+        "start": "node api.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
